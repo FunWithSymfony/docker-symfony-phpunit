@@ -2,6 +2,7 @@ FROM debian:wheezy
  
 ENV DEBIAN_FRONTEND noninteractive
  
+RUN add-apt-repository ppa:ondrej/php5-5.6
 RUN apt-get update -y
 RUN apt-get install -y \
  curl \
